@@ -13,6 +13,45 @@
  * https://github.com/poole/hyde.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F5F5;
+  color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #0095FF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: #0095FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFD600;
+  text-decoration: underline;
+}
+
+.sidebar {
+  background-color: #0095FF;
+  color: white;
+}
+
+.sidebar a {
+  color: white;
+}
+
+.sidebar a:hover {
+  color: #FFD600;
+}
+
+
 
 /*
  * Contents

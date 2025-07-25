@@ -2,7 +2,7 @@
 layout: post
 title: "Back in MAD"
 date: 2025-07-24
-category: Shards
+categories: [Shards]
 ---
 
 It's time to make some new experiment.

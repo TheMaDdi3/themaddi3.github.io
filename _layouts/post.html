@@ -23,3 +23,11 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+{% if page.categories %}
+  <p class="post-categories">
+    In: 
+    {% for cat in page.categories %}
+      <a href="{{ site.baseurl }}/category/{{ cat | downcase }}/">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </p>
+{% endif %}

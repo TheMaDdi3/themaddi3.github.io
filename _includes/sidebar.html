@@ -1,11 +1,12 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <h1>
-        <a href="{{ site.baseurl }}/">
-          {{ site.title }}
+        <a href="{{ site.url }}{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}/assets/img/logo-circle.png" alt="MAD.lair logo" style="max-width: 100px; margin-bottom: 10px;">
         </a>
-      </h1>
+        <h1 style="margin-top: 0;">
+          <a href="{{ site.url }}{{ site.baseurl }}/">{{ site.title }}</a>
+        </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
 

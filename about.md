@@ -19,5 +19,3 @@ I’m also trying to re-learn how to write, quite a long time it's been.
 ---
 
 **Wanna contact me?** If you know me, you probably already know how to find me. For everyone else, that will take some time ;)
-
-

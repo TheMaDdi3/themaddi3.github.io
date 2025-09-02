@@ -43,3 +43,5 @@ Even removing D&D, which is an outlier *per se*, the correlation still stands. M
 That matches another thought of mine, that D&D books are not a game, but more of a framework that allows you to bring on the table **your** D&D.
 
 I need more data and/or experiments to sustain or disprove the thesis. Everything in time.
+
+(*) Uh, I almost forgot this one. Yes, D&D's 2024PHB uses *player* excluding the Dungeon Master, but that's part of the lexicon. For the colloquial use of that term, the DM is still playing a game & is usually the one with some social duties, all delegable to others. So, yes, players, not capitalized nor italic, still include the DM ;)

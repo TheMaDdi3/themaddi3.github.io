@@ -121,3 +121,8 @@ a.sidebar-nav-item:focus {
     margin-right: 22rem;
   }
 }
+mjx-container[display="true"] {
+  display: block;
+  margin: 1em 0;
+  text-align: center;
+}

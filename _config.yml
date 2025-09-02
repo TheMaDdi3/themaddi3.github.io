@@ -12,9 +12,11 @@ description:      'Experiments and thoughts'
 url:              https://themaddi3.github.io
 baseurl:          /
 
+excerpt_separator: "<!--more-->"
+
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Davide C. Milano'
+  url:            https://www.instagram.com/dm_maddi3/
 
 paginate:         5
 

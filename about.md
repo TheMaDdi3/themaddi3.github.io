@@ -18,4 +18,4 @@ I’m also trying to re-learn how to write, quite a long time it's been.
 
 ---
 
-**Wanna contact me?** If you know me, you probably already know how to find me. For everyone else, that will take some time ;)
+**Wanna contact me?** If you know me, you probably already know how to find me. For everyone else, I'm still dropping by sometimes on [Instagram](https://www.instagram.com/dm_maddi3/), but to have some more reliable contact... that will take some time ;)

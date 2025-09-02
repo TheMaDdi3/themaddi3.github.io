@@ -8,14 +8,18 @@ categories:
 ---
 
 ![d20 test](/assets/img/d20motion.png)
+
 The concept of the **integral of motion** of a system is interesting.
 If you have something made of many interconnected parts that influence each other movements by impacts and/or forces of attraction and repulsion it's a mess, BUT you can try to get off the mess by finding something that, despite of all interactions, stays pretty much the same.
+
 In a more "physical" system, usually, **total energy** is a good candidate as something that does not change during whatever you are trying to model.
+
 In other systems it could be something else but, since mathematics people are stubborn, it's not unusual to still call it that way.
 
 The concept of "something that stays the same during whatever is happening", anyway, is called **integral of motion** and it's usually a nice idea to find it if you want to study a system. And a Roleplaying Game ruleset **is** a system. So I did.
 # Wait, is it interesting?
 No.
+
 Because it's data, and data, by itself, is boring.
 
 **Correlations** in between data are far more interesting, because they try to point out that there can be something meaningful there and there actually is an interesting correlation. It's taken from far away, it's quite obvious and I need to double-check everything, but it's quite there.
@@ -23,7 +27,9 @@ Because it's data, and data, by itself, is boring.
 If you look at the various game systems, many of them have pretty specific integrals of motions wired in their system. They are usually constraints laid to limit the power that a single player has to intervene on the agency of other ones.
 More interestingly, many games do not have these constraints, but players put them in anyway.
 They serve a purpose: since the rules fix these limits, whatever bad things happen to the character comes straight from the rules and not from the player.
+
 Take **Daggerheart**: the GM must spend *Fear*, an in-game currency, to make bad stuff happen, it's capped, so the GM *must* spend it, and when it's over some monsters cannot activate their worst abilities.
+
 Take **Band of Blades**: the game has quite the structure, I played two full campaigns (both really enjoyable) but in both cases the GM put an extra structure on missions, turning them in the filling of three clocks, to match a three-act story structure that the game **doesn't have**.
 
 The interesting part is that there is a correlation in between how much structure a game has and how much successful it is. With some outliers, you can see that the less a game has a precise integral of motion, the more is played.

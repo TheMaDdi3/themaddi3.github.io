@@ -11,7 +11,9 @@ categories:
 
 The concept of the **integral of motion** of a system is interesting.
 If you have something made of many interconnected parts that influence each other movements by impacts and/or forces of attraction and repulsion it's a mess, BUT you can try to get off the mess by finding something that, despite of all interactions, stays pretty much the same.
+
 <!--more-->
+
 In a more "physical" system, usually, **total energy** is a good candidate as something that does not change during whatever you are trying to model.
 
 In other systems it could be something else but, since mathematics people are stubborn, it's not unusual to still call it that way.

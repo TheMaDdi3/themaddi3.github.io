@@ -14,7 +14,10 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.excerpt }}
+    {{ post.excerpt | markdownify }}
+    <p>
+      <a href="{{ post.url }}" class="read-more" aria-label="Read '{{ post.title }}'">Read more →</a>
+    </p>
   </div>
   {% endfor %}
 </div>

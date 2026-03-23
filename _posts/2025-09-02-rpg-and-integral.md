@@ -8,11 +8,8 @@ categories:
 ---
 
 ![d20 test](/assets/img/d20motion.png)
-
 The concept of the **integral of motion** of a system is interesting.
 If you have something made of many interconnected parts that influence each other movements by impacts and/or forces of attraction and repulsion it's a mess, BUT you can try to get off the mess by finding something that, despite of all interactions, stays pretty much the same.
-
-<!--more-->
 
 In a more "physical" system, usually, **total energy** is a good candidate as something that does not change during whatever you are trying to model.
 
@@ -44,4 +41,5 @@ That matches another thought of mine, that D&D books are not a game, but more of
 
 I need more data and/or experiments to sustain or disprove the thesis. Everything in time.
 
+> [!Note] Footnotes!
 > ( * ) Uh, I almost forgot this one. Yes, D&D's 2024PHB uses *player* excluding the Dungeon Master, but that's part of the lexicon. For the colloquial use of that term, the DM is still playing a game & is usually the one with some social duties, all delegable to others. So, yes, players, not capitalized nor italic, still includes the DM ;)

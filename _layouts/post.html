@@ -27,7 +27,7 @@ layout: default
   <p class="post-categories">
     In: 
     {% for cat in page.categories %}
-      <a href="{{ site.baseurl }}/category/{{ cat | downcase }}/">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
+      <a href="{{ '/category/' | append: cat | downcase | append: '/' | relative_url }}">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
     {% endfor %}
   </p>
 {% endif %}

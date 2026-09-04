@@ -1,48 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Roboto&display=swap');
+:root {
+  --color-cream: #FFF9F2;
+  --color-ink: #1C1917;
+  --color-orange: #FF6A00;
+  --color-orange-text: #A84300;
+  --color-orange-hover: #803300;
+  --color-gray: #A0A0A0;
+  --color-gray-light: #E8E1DA;
+  --color-gray-dark: #5F5750;
+  --color-border: #C9BFB6;
+}
 
 /* ---------- BASE TYPOGRAPHY ---------- */
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #F5F5F5;
-  color: #333333;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Barlow Condensed', sans-serif;
-  color: #0095FF;
+  color: var(--color-orange-text);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 a {
-  color: #0095FF;
-  text-decoration: none;
+  color: var(--color-orange-text);
+  text-decoration-thickness: .08em;
+  text-underline-offset: .15em;
 }
 
-a:hover {
-  color: #D49E00; /* Giallo accessibile su sfondo chiaro */
+a:hover,
+a:focus {
+  color: var(--color-orange-hover);
   text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--color-ink);
+  outline-offset: 3px;
 }
 
 /* ---------- SIDEBAR ---------- */
 
 .sidebar {
-  background-color: #0095FF;
-  color: white;
+  background-color: var(--color-orange);
+  color: var(--color-ink);
   text-align: center;
   padding: 2rem 1rem;
 }
 
 .sidebar a {
-  color: white;
+  color: var(--color-ink);
 }
-.sidebar a:hover {
-  color: #FFD600;
+.sidebar a:hover,
+.sidebar a:focus {
+  color: var(--color-ink);
+  text-decoration: underline;
 }
 
 .sidebar-about h1 {
-  color: white;
+  color: var(--color-ink);
   margin-top: 0;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 3.25rem;
@@ -81,6 +100,8 @@ a.sidebar-nav-item:focus {
 }
 .sidebar-nav-item.active {
   font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: .2em;
 }
 
 /* ---------- PAGE CONTENT ---------- */
@@ -146,7 +167,7 @@ mjx-container[display="true"] {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.875rem;
-  color: #0095FF;
+  color: var(--color-orange-text);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -154,7 +175,50 @@ mjx-container[display="true"] {
 
 .read-more:hover,
 .read-more:focus {
-  color: #FFD600;
-  border-color: #FFD600;
-  outline: none;
+  color: var(--color-orange-hover);
+  border-color: var(--color-orange-hover);
+}
+
+/* ---------- SUPPORTING SURFACES ---------- */
+
+strong,
+.page-title,
+.post-title,
+.post-title a {
+  color: var(--color-ink);
+}
+
+.post-date,
+.message,
+blockquote {
+  color: var(--color-gray-dark);
+}
+
+hr,
+.related {
+  border-top-color: var(--color-border);
+}
+
+code,
+pre,
+.message,
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th,
+a.pagination-item:hover {
+  background-color: var(--color-gray-light);
+}
+
+code {
+  color: var(--color-orange-hover);
+}
+
+blockquote {
+  border-left-color: var(--color-gray);
+}
+
+table,
+td,
+th,
+.pagination-item {
+  border-color: var(--color-border);
 }

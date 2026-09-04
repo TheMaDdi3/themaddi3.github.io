@@ -1,22 +1,22 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="{{ site.url }}{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/assets/img/logo-circle.png" alt="MAD.lair logo" class="site-logo">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/img/logo-circle.png' | relative_url }}" alt="MAD.lair logo" class="site-logo">
       </a>
       <h1 style="margin-top: 0;">
-        <a href="{{ site.url }}{{ site.baseurl }}/">{{ site.title }}</a>
+        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
-      <a class="sidebar-nav-item{% if page.url contains '/about/' %} active{% endif %}" href="{{ site.baseurl }}/about/">About</a>
-      <a class="sidebar-nav-item{% if page.url contains '/category/math/' %} active{% endif %}" href="{{ site.baseurl }}/category/math/">Math</a>
-      <a class="sidebar-nav-item{% if page.url contains '/category/music/' %} active{% endif %}" href="{{ site.baseurl }}/category/music/">Music</a>
-      <a class="sidebar-nav-item{% if page.url contains '/category/rpgs/' %} active{% endif %}" href="{{ site.baseurl }}/category/rpgs/">RPGs</a>
-      <a class="sidebar-nav-item{% if page.url contains '/category/shards/' %} active{% endif %}" href="{{ site.baseurl }}/category/shards/">Shards</a>
+      <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+      <a class="sidebar-nav-item{% if page.url contains '/about/' %} active{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
+      <a class="sidebar-nav-item{% if page.url contains '/category/math/' %} active{% endif %}" href="{{ '/category/math/' | relative_url }}">Math</a>
+      <a class="sidebar-nav-item{% if page.url contains '/category/music/' %} active{% endif %}" href="{{ '/category/music/' | relative_url }}">Music</a>
+      <a class="sidebar-nav-item{% if page.url contains '/category/rpgs/' %} active{% endif %}" href="{{ '/category/rpgs/' | relative_url }}">RPGs</a>
+      <a class="sidebar-nav-item{% if page.url contains '/category/shards/' %} active{% endif %}" href="{{ '/category/shards/' | relative_url }}">Shards</a>
     </nav>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>

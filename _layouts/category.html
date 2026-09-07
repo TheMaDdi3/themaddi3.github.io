@@ -2,15 +2,17 @@
 layout: default
 ---
 
-<h1>Category: {{ page.category }}</h1>
+{% assign category_posts = site.categories[page.category] %}
 
-<ul>
-  {% for post in site.posts %}
-    {% if post.categories contains page.category %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <small>({{ post.date | date: "%d %b %Y" }})</small>
-      </li>
-    {% endif %}
+<header class="category-header">
+  <p class="eyebrow">Filed under</p>
+  <h1>{{ page.category }}</h1>
+  {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+  <p class="category-count">{{ category_posts.size }} {% if category_posts.size == 1 %}article{% else %}articles{% endif %}</p>
+</header>
+
+<div class="post-grid category-grid">
+  {% for post in category_posts %}
+    {% include post-card.html post=post %}
   {% endfor %}
-</ul>
+</div>

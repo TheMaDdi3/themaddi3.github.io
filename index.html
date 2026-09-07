@@ -3,38 +3,48 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<header class="home-intro">
+  <p class="eyebrow">Notes from the lair</p>
+  <h1>{{ site.tagline }}</h1>
+  <p>{{ site.description }} about roleplaying games, mathematics, music and everything that refuses to fit neatly in a drawer.</p>
+</header>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+{% assign featured_post = paginator.posts | first %}
+{% if featured_post %}
+  <section class="featured-section" aria-labelledby="latest-heading">
+    <div class="section-heading">
+      <h2 id="latest-heading">Latest</h2>
+    </div>
+    {% include post-card.html post=featured_post featured=true %}
+  </section>
+{% endif %}
 
-    {{ post.excerpt | markdownify }}
-    <p>
-      <a href="{{ post.url }}" class="read-more" aria-label="Read '{{ post.title }}'">Read more →</a>
-    </p>
-  </div>
-  {% endfor %}
-</div>
+{% if paginator.posts.size > 1 %}
+  <section class="archive-section" aria-labelledby="archive-heading">
+    <div class="section-heading">
+      <h2 id="archive-heading">From the archive</h2>
+    </div>
+    <div class="post-grid">
+      {% for post in paginator.posts offset:1 %}
+        {% include post-card.html post=post %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+    <a class="pagination-item older" href="{{ '/page' | append: paginator.next_page | append: '/' | relative_url }}">Older posts</a>
   {% else %}
-    <span class="pagination-item older">Older</span>
+    <span class="pagination-item older">Older posts</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+      <a class="pagination-item newer" href="{{ '/' | relative_url }}">Newer posts</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+      <a class="pagination-item newer" href="{{ '/page' | append: paginator.previous_page | append: '/' | relative_url }}">Newer posts</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">Newer</span>
+    <span class="pagination-item newer">Newer posts</span>
   {% endif %}
 </div>

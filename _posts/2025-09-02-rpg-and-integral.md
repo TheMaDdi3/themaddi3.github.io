@@ -5,9 +5,10 @@ date: 2025-09-02
 categories:
   - Math
   - RPGs
+image: /assets/img/d20motion.png
+image_alt: An orange twenty-sided die suggesting motion around its edges
 ---
 
-![d20 test](/assets/img/d20motion.png)
 The concept of the **integral of motion** of a system is interesting.
 If you have something made of many interconnected parts that influence each other movements by impacts and/or forces of attraction and repulsion it's a mess, BUT you can try to get off the mess by finding something that, despite of all interactions, stays pretty much the same.
 

@@ -2,6 +2,9 @@
 markdown:         kramdown
 highlighter:      rouge
 
+kramdown:
+  header_offset:  1
+
 # Permalinks
 permalink:        pretty
 
@@ -9,6 +12,7 @@ permalink:        pretty
 title:            MAD.lair
 tagline:          'Games, math, and epic stuff'
 description:      'Experiments and thoughts'
+lang:             en
 url:              https://madlair.com
 baseurl:          ""
 
@@ -24,4 +28,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/TheMaDdi3/themaddi3.github.io

@@ -1,0 +1,50 @@
+{% assign card_post = include.post %}
+{% assign words = card_post.content | number_of_words %}
+{% assign reading_time = words | divided_by: 200 %}
+{% if reading_time < 1 %}{% assign reading_time = 1 %}{% endif %}
+
+<article class="post-card{% if include.featured %} post-card--featured{% endif %}">
+  <a class="post-card-media" href="{{ card_post.url | relative_url }}" aria-label="Read {{ card_post.title }}">
+    {% if card_post.image %}
+      <img src="{{ card_post.image | relative_url }}"
+           alt="{{ card_post.image_alt | default: card_post.title | escape }}"
+           style="object-position: {{ card_post.image_position | default: 'center' }};"
+           loading="{% if include.featured %}eager{% else %}lazy{% endif %}">
+    {% else %}
+      <span class="post-card-placeholder" aria-hidden="true">
+        <span class="post-card-mark">M</span>
+      </span>
+    {% endif %}
+  </a>
+
+  <div class="post-card-body">
+    {% if card_post.categories %}
+      {% assign sorted_categories = card_post.categories | sort_natural %}
+      <div class="category-badges" aria-label="Categories">
+        {% for category in sorted_categories %}
+          <a class="category-badge" href="{{ '/category/' | append: category | downcase | append: '/' | relative_url }}">{{ category }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <h2 class="post-card-title">
+      <a href="{{ card_post.url | relative_url }}">{{ card_post.title }}</a>
+    </h2>
+
+    <p class="post-card-meta">
+      <time datetime="{{ card_post.date | date_to_xmlschema }}">{{ card_post.date | date: "%d %b %Y" }}</time>
+      <span aria-hidden="true">·</span>
+      <span>{{ reading_time }} min read</span>
+    </p>
+
+    <p class="post-card-excerpt">
+      {% if card_post.description %}
+        {{ card_post.description }}
+      {% else %}
+        {{ card_post.excerpt | strip_html | normalize_whitespace | truncate: 190 }}
+      {% endif %}
+    </p>
+
+    <a class="read-more" href="{{ card_post.url | relative_url }}" aria-label="Read {{ card_post.title }}">Read article <span aria-hidden="true">→</span></a>
+  </div>
+</article>

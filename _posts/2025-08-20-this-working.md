@@ -4,6 +4,7 @@ title: Is this working?
 date: 2025-08-19
 categories:
   - Math
+math: true
 ---
 I'm studying for two exams.
 Both about calculus, one focuses on $\mathcal{L}^p$ spaces, Fourier series and transformations, the other one is about PDE, Partial Derivates Equations.

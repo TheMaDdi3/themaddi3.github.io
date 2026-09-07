@@ -1,16 +1,16 @@
-<div class="sidebar">
+<aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="{{ '/' | relative_url }}">
+      <a class="logo-link" href="{{ '/' | relative_url }}" aria-label="MAD.lair home">
         <img src="{{ '/assets/img/logo-circle.png' | relative_url }}" alt="MAD.lair logo" class="site-logo">
       </a>
-      <h1 style="margin-top: 0;">
+      <p class="sidebar-title">
         <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      </h1>
+      </p>
       <p class="lead">{{ site.description }}</p>
     </div>
 
-    <nav class="sidebar-nav">
+    <nav class="sidebar-nav" aria-label="Main navigation">
       <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
       <a class="sidebar-nav-item{% if page.url contains '/about/' %} active{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
       <a class="sidebar-nav-item{% if page.url contains '/category/math/' %} active{% endif %}" href="{{ '/category/math/' | relative_url }}">Math</a>
@@ -19,6 +19,10 @@
       <a class="sidebar-nav-item{% if page.url contains '/category/shards/' %} active{% endif %}" href="{{ '/category/shards/' | relative_url }}">Shards</a>
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <footer class="sidebar-footer">
+      <a href="{{ '/atom.xml' | relative_url }}">RSS</a>
+      <span aria-hidden="true">·</span>
+      <span>&copy; {{ site.time | date: '%Y' }}</span>
+    </footer>
   </div>
-</div>
+</aside>

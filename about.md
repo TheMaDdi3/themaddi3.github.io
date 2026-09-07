@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+description: About Davide, MAD.lair and the ideas collected here.
 permalink: /about/
 ---
 

@@ -13,6 +13,7 @@ title:            MAD.lair
 tagline:          'Games, math, and epic stuff'
 description:      'Experiments and thoughts'
 lang:             en
+timezone:         Europe/Rome
 url:              https://madlair.com
 baseurl:          ""
 

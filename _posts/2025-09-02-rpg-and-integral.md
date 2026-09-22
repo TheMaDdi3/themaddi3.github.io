@@ -7,6 +7,7 @@ categories:
   - RPGs
 image: /assets/img/d20motion.png
 image_alt: An orange twenty-sided die suggesting motion around its edges
+image_in_content: true
 ---
 
 The concept of the **integral of motion** of a system is interesting.
